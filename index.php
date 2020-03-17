@@ -1,13 +1,6 @@
 <?php
-//  session_start();
-// Validar para que envie a inicio admin o inicio empleado
-if (isset($_SESSION['sesion'])) {
-  if ($_SESSION['tipo'] == 'admin') {
-    header('Location: vistas/inicio_Admin.php');
-  } elseif ($_SESSION['tipo'] == 'empleado') {
-    header('Location: vistas/emp_Inicio.php');
-  }
-}
+session_start();
+
 ?>
 
 <!DOCTYPE html>
